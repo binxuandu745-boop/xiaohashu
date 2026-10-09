@@ -1,0 +1,13 @@
+#=================================================================
+# 对象存储配置
+#=================================================================
+storage:
+  minio:
+    endpoint: http://127.0.0.1:9000
+    accessKey: "REPLACE_WITH_LOCAL_VALUE"
+    secretKey: "REPLACE_WITH_LOCAL_VALUE"
+  aliyun-oss:
+    endpoint: https://oss-cn-hangzhou.aliyuncs.com # 改成你自己的
+    accessKey: "REPLACE_WITH_LOCAL_VALUE"
+    secretKey: "REPLACE_WITH_LOCAL_VALUE"
+

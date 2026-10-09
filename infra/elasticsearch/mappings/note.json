@@ -1,0 +1,36 @@
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 0
+  },
+  "mappings": {
+    "properties": {
+      "id": { "type": "long" },
+      "cover": { "type": "keyword", "ignore_above": 1024 },
+      "title": {
+        "type": "text",
+        "analyzer": "ik_max_word",
+        "search_analyzer": "ik_smart"
+      },
+      "topic": {
+        "type": "text",
+        "analyzer": "ik_max_word",
+        "search_analyzer": "ik_smart"
+      },
+      "nickname": { "type": "keyword", "ignore_above": 256 },
+      "avatar": { "type": "keyword", "ignore_above": 1024 },
+      "type": { "type": "integer" },
+      "create_time": {
+        "type": "date",
+        "format": "yyyy-MM-dd HH:mm:ss||strict_date_optional_time||epoch_millis"
+      },
+      "update_time": {
+        "type": "date",
+        "format": "yyyy-MM-dd HH:mm:ss||strict_date_optional_time||epoch_millis"
+      },
+      "like_total": { "type": "long" },
+      "collect_total": { "type": "long" },
+      "comment_total": { "type": "long" }
+    }
+  }
+}

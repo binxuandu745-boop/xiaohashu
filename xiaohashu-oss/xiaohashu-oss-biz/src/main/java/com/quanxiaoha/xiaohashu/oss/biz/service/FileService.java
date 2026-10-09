@@ -1,0 +1,18 @@
+package com.quanxiaoha.xiaohashu.oss.biz.service;
+
+import com.quanxiaoha.framework.common.response.Response;
+import org.springframework.web.multipart.MultipartFile;
+
+/**
+ * @description: TODO
+ */
+public interface FileService {
+
+    /**
+     * 上传文件
+     *
+     * @param file
+     * @return
+     */
+    Response<?> uploadFile(MultipartFile file);
+}
